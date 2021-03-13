@@ -14,8 +14,8 @@ public class Recipe{
     	return this.name;
     }
     
-    public void setIngredienser(String ingrediens) {
-    	ingredients.add(ingrediens);
+    public void setIngredienser(String ingredient) {
+    	ingredients.add(ingredient);
     }
     
     public void getIngredienser() {
