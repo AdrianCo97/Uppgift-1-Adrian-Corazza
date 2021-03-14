@@ -9,8 +9,8 @@ public class Main {
 	ArrayList<Recipe> recipes = new ArrayList<Recipe>();
 	
 	
-	String[] pancakesRecipe = {"flour", "salt", "egg"};
-	Recipe pancakes = new Recipe("pancakes", pancakesRecipe , 45);	
+	String[] pancakesRecipe = {"flour", "salt", "egg", "sugar"};
+	Recipe pancakes = new Recipe("Pancakes", pancakesRecipe , 45);	
 	
 	recipes.add(pancakes);
     
@@ -21,7 +21,7 @@ public class Main {
     //-------------------------------------------------------------
     
     String[] pastaRecipe = {"spaghetti", "Oregano", "Mozarella"};
-	Recipe pasta = new Recipe("pasta", pastaRecipe , 30);	
+	Recipe pasta = new Recipe("Pasta", pastaRecipe , 30);	
 	
 	recipes.add(pasta);
     
@@ -32,7 +32,7 @@ public class Main {
     //-------------------------------------------------------------
     
     String[] potatoGratinRecipe= {"potatoes", "cooking cream", "Cheese"};
-	Recipe potatoGratin = new Recipe("pasta", potatoGratinRecipe , 60);	
+	Recipe potatoGratin = new Recipe("Potato gratin", potatoGratinRecipe , 60);	
 	
 	recipes.add(potatoGratin);
     
