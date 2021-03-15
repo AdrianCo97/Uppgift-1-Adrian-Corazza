@@ -9,47 +9,71 @@ public class Main {
 	ArrayList<Recipe> recipes = new ArrayList<Recipe>();
 	
 	
-	String[] pancakesRecipe = {"flour", "salt", "egg", "sugar"};
-	Recipe pancakes = new Recipe("Pancakes", pancakesRecipe , 45);	
+	ArrayList<String> pancakesRecipe = new ArrayList<String>();
+	pancakesRecipe.add("Flour");
+	pancakesRecipe.add("Eggs");
+	pancakesRecipe.add("Milk");
+	Recipe pancakes = new Recipe("Pancakes", pancakesRecipe, 45);	
 	
 	recipes.add(pancakes);
-    
-    System.out.println(pancakes);
-    
-    pancakes.getIngredients();
-    
+
     //-------------------------------------------------------------
     
-    String[] pastaRecipe = {"spaghetti", "Oregano", "Mozarella"};
+	ArrayList<String> pastaRecipe = new ArrayList<String>();
+	pastaRecipe.add("Spaghetti");
+	pastaRecipe.add("Oregano");
+	pastaRecipe.add("Ground beef");
 	Recipe pasta = new Recipe("Pasta", pastaRecipe , 30);	
 	
 	recipes.add(pasta);
     
-    System.out.println(pasta);
-    
-    pasta.getIngredients();
-    
     //-------------------------------------------------------------
+	
+	ArrayList<String> potatoGratinRecipe = new ArrayList<String>();
+	potatoGratinRecipe.add("Potatoes");
+	potatoGratinRecipe.add("Cooking cream");
+	potatoGratinRecipe.add("Cheese");
     
-    String[] potatoGratinRecipe= {"potatoes", "cooking cream", "Cheese"};
 	Recipe potatoGratin = new Recipe("Potato gratin", potatoGratinRecipe , 60);	
 	
 	recipes.add(potatoGratin);
     
-    System.out.println(potatoGratin);
-    
-    potatoGratin.getIngredients();
-    
     //-------------------------------------------------------------
-    
-    String[] carbonaraRecipe = {"spaghetti", "Bacon", "Egg"};
-	Recipe carbonara = new Recipe("Spaghetti Carbonare", carbonaraRecipe , 28);	
+	
+	ArrayList<String> carbonaraRecipe = new ArrayList<String>();
+	carbonaraRecipe.add("Spaghetti");
+	carbonaraRecipe.add("Bacon");
+	carbonaraRecipe.add("Eggs");
+	carbonaraRecipe.add("Flour");
+   
+	Recipe carbonara = new Recipe("Spaghetti Carbonara", carbonaraRecipe, 28);	
 	
 	recipes.add(carbonara);
     
-    System.out.println(carbonara);
+    //-------------------------------------------------------------
     
-    carbonara.getIngredients();
+    ForLoop forLoop = new ForLoop();
+    
+    forLoop.getNamesIfEgg(recipes);
+    
+    System.out.println("-------------------------------------------------------------");
+    
+    forLoop.getNamesIfEggAndSugar(recipes);
+    
+    System.out.println("-------------------------------------------------------------");
+    
+    forLoop.checkAmountOfIngredients(recipes);
+    
+    System.out.println("-------------------------------------------------------------");
+    
+    forLoop.getNamesIfFlour(recipes);
+    
+    System.out.println("-------------------------------------------------------------");
+    
+    forLoop.getNamesOfFirstChar(recipes);
 
 	}
+	
+	
+	
 }
