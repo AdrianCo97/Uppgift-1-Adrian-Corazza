@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 
@@ -7,7 +8,6 @@ public class Main {
 	public static void main(String[] args) {
 		
 	ArrayList<Recipe> recipes = new ArrayList<Recipe>();
-	
 	
 	ArrayList<String> pancakesRecipe = new ArrayList<String>();
 	pancakesRecipe.add("Flour");
@@ -52,27 +52,39 @@ public class Main {
     
     //-------------------------------------------------------------
     
-    ForLoop forLoop = new ForLoop();
+//    ForLoop forLoop = new ForLoop();
+//    
+//    forLoop.getNamesIfEgg(recipes);
+//    
+//    System.out.println("-------------------------------------------------------------");
+//    
+//    forLoop.getNamesIfEggAndSugar(recipes);
+//    
+//    System.out.println("-------------------------------------------------------------");
+//    
+//    forLoop.checkAmountOfIngredients(recipes);
+//    
+//    System.out.println("-------------------------------------------------------------");
+//    
+//    forLoop.getNamesIfFlour(recipes);
+//    
+//    System.out.println("-------------------------------------------------------------");
+//    
+//    forLoop.getNamesOfFirstChar(recipes);
+//    
+//    System.out.println("-------------------------------------------------------------");
     
-    forLoop.getNamesIfEgg(recipes);
+    Stream stream = new Stream();
     
-    System.out.println("-------------------------------------------------------------");
+    stream.getNamesIfEgg(recipes);
     
-    forLoop.getNamesIfEggAndSugar(recipes);
-    
-    System.out.println("-------------------------------------------------------------");
-    
-    forLoop.checkAmountOfIngredients(recipes);
-    
-    System.out.println("-------------------------------------------------------------");
-    
-    forLoop.getNamesIfFlour(recipes);
-    
-    System.out.println("-------------------------------------------------------------");
-    
-    forLoop.getNamesOfFirstChar(recipes);
+    stream.getNamesOfFirstChar(recipes);
 
 	}
+	
+	
+	
+	
 	
 	
 	
